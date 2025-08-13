@@ -2,6 +2,10 @@
 
 Una aplicación web moderna construida con React y Vite que muestra información sobre personajes del universo Dragon Ball utilizando la API de Dragon Ball.
 
+## Captura de Pantalla
+
+<img width="1489" height="938" alt="Captura de pantalla 2025-08-13 101552" src="https://github.com/user-attachments/assets/68266240-b3a3-4345-8dac-fb49ae3bf0e1" />
+
 ## 🚀 Características
 
 - Visualización de personajes en un grid responsivo
