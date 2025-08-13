@@ -1,0 +1,159 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #0a0a0a;
+}
+
+.app-header {
+  background: #0a0a0a;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title-dragon,
+.title-ball,
+.title-api {
+  color: #f9a825;
+  text-shadow: 0 0 10px rgba(249, 168, 37, 0.5);
+}
+
+.title-dragon,
+.title-ball {
+  margin-right: 0.5rem;
+}
+
+.title-api {
+  font-size: 0.8em;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .app-header {
+    padding: 3rem 2rem;
+  }
+  
+  .app-header h1 {
+    font-size: 4rem;
+  }
+
+  .title-api {
+    display: inline;
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .character-grid {
+    padding: 2rem;
+  }
+}
+
+.character-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+}
+
+.character-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #141414;
+  padding: 1rem;
+}
+
+.character-card h3 {
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.character-card p {
+  color: #ccc;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.character-card p::before {
+  content: attr(data-label);
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.loading,
+.error-message,
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.error-message {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
