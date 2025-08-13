@@ -1,4 +1,5 @@
-⚠️ Este proyecto y codigo completo a sido generado por CLAUDE IA para hacer pruebas de mal diseño de la IA
+> [!CAUTION]
+> Este proyecto y codigo completo a sido generado por CLAUDE IA para hacer pruebas de mal diseño de la IA
 
 # 🐉 Dragon Ball Universe Explorer
 
